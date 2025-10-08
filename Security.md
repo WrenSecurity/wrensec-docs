@@ -5,4 +5,4 @@ It includes processes, tools, and practices that help reduce vulnerabilities and
 
 ## Further information
 
-- [Supply chain security](/WrenSecurity/wrensec-docs/wiki/Supply-Chain-Security)
+- [Supply chain security](https://github.com/WrenSecurity/wrensec-docs/wiki/Supply-Chain-Security)
