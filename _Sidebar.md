@@ -6,5 +6,7 @@
   - [Coding Standards](/WrenSecurity/wrensec-docs/wiki/Coding-Standards-&amp;-Style-Guides)
       - [Java](/WrenSecurity/wrensec-docs/wiki/Java-Style-Guide)
       - [JavaScript](/WrenSecurity/wrensec-docs/wiki/JavaScript-Style-Guide)
+- [Security](/WrenSecurity/wrensec-docs/wiki/Security)
+  - [Supply chain security](/WrenSecurity/wrensec-docs/wiki/Supply-Chain-Security.md)
 - [Versioning, Branching, and Tagging](/WrenSecurity/wrensec-docs/wiki/Versioning,-Branching,-and-Tagging)
 - [Working with OIDs](/WrenSecurity/wrensec-docs/wiki/Working-with-OIDs)
