@@ -98,3 +98,31 @@ CodeQL runs automatically:
 - Results are collected under each repository’s **Security > Code scanning alerts**.
 - Access to CodeQL alerts is limited to selected organization members.
 - Developers contributing code do not need to configure anything; the analysis runs automatically.
+
+## Dependabot
+
+### Implementation Overview
+
+An example configuration can be found in the [WrenSecurity .github repository](https://github.com/WrenSecurity/.github/blob/main/.github/dependabot.yml).
+
+The configuration is scheduled to run once a month. It is set up to check only for major version updates of the GitHub Actions within the `.github/workflows` directory. When updates are available, Dependabot automatically generates a pull request with the proposed changes.
+
+### Version Notation
+
+For enhanced security, all GitHub Actions are pinned to a specific commit SHA. The semantic version number is maintained as an inline comment for clarity. This notation is accepted and followed by Dependabot.
+
+The format for this notation is as follows:
+
+```yaml
+
+uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+```
+
+### Manual Updates
+
+GitHub Actions can still be updated manually, which is particularly important for immediately patching compromised versions or addressing urgent security advisories. When performing a manual update, the above-described notation must be followed.
+
+### Security Context
+
+Pinning actions to a specific commit SHA and enforcing regular, automated updates are critical steps toward maintaining a secure and controlled CI/CD pipeline. Combined with CodeQL and Sonar analysis, this approach actively minimizes the risk of supply-chain attacks.
