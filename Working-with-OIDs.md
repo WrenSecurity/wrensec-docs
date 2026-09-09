@@ -15,6 +15,7 @@ The first level of branching under our base corresponds to the products we maint
 | Product | OID                   |
 | ------- | --------------------- |
 | Wren:AM | `1.3.6.1.4.1.64165.1` |
+| Wren:DS | `1.3.6.1.4.1.64165.2` |
 
 
 ### Protocol-specific branches
@@ -34,6 +35,7 @@ LDAP schema definitions require multiple categories of OIDs, such as attribute t
 | ------------------------- | --------------- |
 | `1.3.6.1.4.1.64165.*.1.1` | Attribute Types |
 | `1.3.6.1.4.1.64165.*.1.2` | Object Classes  |
+| `1.3.6.1.4.1.64165.*.1.3` | Request / Response Controls  |
 
 
 ## OID registry
@@ -42,8 +44,9 @@ The table below serves as our simple, authoritative OID registry for all allocat
 
 | Object Identifier | Name | Description | Allocation status | Related issue |
 | - | - | - | - | - |
-| `1.3.6.1.4.1.64165.1.1.1.1` | `webAuthnDeviceProfiles` | WebAuthn device profiles string | Proposed | N/A |
-| `1.3.6.1.4.1.64165.1.1.2.1` | `webAuthnDeviceProfilesContainer` | Class containing WebAuthn device profiles | Proposed | N/A |
+| `1.3.6.1.4.1.64165.1.1.1.1` | `webAuthnDeviceProfiles` | WebAuthn device profiles string | Assigned | N/A |
+| `1.3.6.1.4.1.64165.1.1.2.1` | `webAuthnDeviceProfilesContainer` | Class containing WebAuthn device profiles | Assigned | N/A |
+| `1.3.6.1.4.1.64165.2.1.3.1` | `TraceContextRequestControl` | OTEL trace context request control | N/A |
 
 **Do not self-assign numbers**. When you create a new feature that requires an OID, describe the need and motivation in the feature’s pull request. In that PR, specify:
 
